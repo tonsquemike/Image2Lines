@@ -227,7 +227,7 @@ public:
     /// Save current line regions returned from get_regions() or segment() functions in jpg files.
     /// \param lines
     /// \param path
-    void save_lines_to_file(const vector<cv::Mat> &lines);
+    void save_lines_to_file(const vector<cv::Mat> &lines, string path);
 
     //document image labelling
     void labelImage(string path);

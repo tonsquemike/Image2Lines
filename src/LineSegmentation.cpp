@@ -194,10 +194,10 @@ LineSegmentation::save_image_with_lines(string path) {
 }
 
 void
-LineSegmentation::save_lines_to_file(const vector<cv::Mat> &lines) {
+LineSegmentation::save_lines_to_file(const vector<cv::Mat> &lines, string path) {
     int idx = 0;
     for (auto m : lines) {
-        imwrite(OUT_PATH + "Line_" + to_string(idx++) + ".jpg", m);
+        imwrite(path + "Line_" + to_string(idx++) + ".jpg", m);
     }
 }
 

@@ -8,6 +8,6 @@ int main(int argc, char *argv[]) {
     LineSegmentation line_segmentation(img_path, argv[2]);
     vector<cv::Mat> lines = line_segmentation.segment();
     // Save lines to path.
-    line_segmentation.save_lines_to_file(lines);
+    line_segmentation.save_lines_to_file(lines, argv[2]);
     return 0;
 }
